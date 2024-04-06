@@ -109,6 +109,7 @@ const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018);
 */
 
+/*
 const now = 2037;
 const ageBhavya = now - 2001;
 const ageSarah = now - 2018;
@@ -132,3 +133,53 @@ const BMIJohn = massJohn / (heightJohn * heightJohn);
 const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
+*/
+
+/*
+const firstName = "Bhavya";
+const job = "teacher";
+const birthYear = 1991;
+const year = 2037;
+
+const msg =
+  "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+
+console.log(msg);
+
+const msgNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(msgNew);
+
+console.log(`Just a regular string.....`);
+
+console.log(
+  "String with \n\
+multiple \n\
+lines"
+);
+
+const age = 15;
+if (age >= 18) {
+  console.log("sarah can start driving license 🚗");
+} else {
+  const yearLeft = 18 - age;
+  console.log(`Sarah is too young. Wait another ${yearLeft} years :)`);
+}
+
+const birthYear1 = 1998;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Bhavya"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+*/
