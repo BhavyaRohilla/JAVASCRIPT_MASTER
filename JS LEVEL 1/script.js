@@ -183,3 +183,45 @@ console.log(typeof NaN);
 
 console.log(String(23), 23);
 */
+
+/*
+// type coercion
+
+console.log("I am " + 23 + "Years old");
+console.log("23" - "10" - 3);
+console.log("23" / 2);
+
+let n = "1" + 1; // '11'
+n = n - 1;
+console.log(n);
+*/
+
+// Day - 4
+/*
+let currYear = "2024";
+console.log("In 10 Years, it will be " + currYear + 10);
+console.log(currYear + 10);
+
+console.log("In 10 years, it will be " + Number(currYear) + 10);
+console.log(Number(currYear) + 10);
+
+console.log(Number("Br12345"));
+
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+*/
+
+// */ +-
+
+// Type coercion
+console.log("23" - "10" - 3);
+console.log("23" + "10" + 3);
+console.log("23" * "2");
+console.log("46" / 2);
+console.log("46" > "2");
+
+console.log("23" + "10" - 3); // 2307
+console.log("23" - "10" + 3); // 16
+console.log("23" - "10" + "3"); //  133
+console.log(2 + 3 + 4 + "5"); // 95
