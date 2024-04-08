@@ -215,6 +215,7 @@ console.log(String(23), 23);
 // */ +-
 
 // Type coercion
+/*
 console.log("23" - "10" - 3);
 console.log("23" + "10" + 3);
 console.log("23" * "2");
@@ -225,3 +226,51 @@ console.log("23" + "10" - 3); // 2307
 console.log("23" - "10" + 3); // 16
 console.log("23" - "10" + "3"); //  133
 console.log(2 + 3 + 4 + "5"); // 95
+*/
+
+/*******************************************************************************/
+//Day - 5
+// 5 falsy value: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Bhavya"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 0;
+if (money) {
+  console.log("Don't Spend it all :) ");
+} else {
+  console.log("You should get a job");
+}
+
+let height;
+if (height) {
+  console.log("YaY! height is defined");
+} else {
+  console.log("height is undefined");
+}
+
+// Equality operator == vs ===
+
+const age = 18;
+if (age === 18) console.log("You just became an adult :D");
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite == 23) {
+  console.log("Cool! 23 is an amazing number!");
+} else if (favourite === 7) {
+  console.log("7 is also a cool number");
+} else if (favourite === 9) {
+  console.log("9 is also a cool number!");
+} else {
+  console.log("Number is not 23 or 7 or 9");
+}
+
+// !=, !==
+
+if (favourite !== 23) console.log("Why not 23?");
