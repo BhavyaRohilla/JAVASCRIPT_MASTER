@@ -231,7 +231,7 @@ console.log(2 + 3 + 4 + "5"); // 95
 /*******************************************************************************/
 //Day - 5
 // 5 falsy value: 0, '', undefined, null, NaN
-
+/*
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean("Bhavya"));
@@ -274,3 +274,68 @@ if (favourite == 23) {
 // !=, !==
 
 if (favourite !== 23) console.log("Why not 23?");
+*/
+
+// Day - 6
+
+const hasDriverLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+
+// const shouldDrive = hasDriverLicense && hasGoodVision;
+
+// if (hasDriverLicense && hasGoodVision) {
+//   console.log("Bhavya is able to drive!!");
+// } else {
+//   console.log("Someone else should drive........");
+// }
+
+const isTried = true;
+console.log(hasDriverLicense && hasGoodVision && !isTried);
+
+const day = "abcs";
+
+switch (day) {
+  case "monday":
+    console.log("Go to goa");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare meetup details");
+    break;
+  case "wednesday":
+    console.log("Write code example");
+    break;
+  default:
+    console.log("Not a valid day");
+}
+
+if (day === "monday") {
+} else if (day === "tuesday") {
+} else if (day === "wednesday") {
+} else {
+  console.log("Not a valid day!!!");
+}
+
+const age = 23;
+
+// age >= 18
+//   ? console.log("I like to drink Wine🍷")
+//   : console.log("I like to drink Water💧");
+
+const drink = age >= 18 ? "I like to drink Wine🍷" : "I like to drink Water💧";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine🍷";
+} else {
+  drink2 = "Water💧";
+}
+
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "Wine🍷" : "Water💧"}`);
