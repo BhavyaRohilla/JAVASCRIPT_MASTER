@@ -293,6 +293,7 @@ console.log(!hasDriverLicense);
 //   console.log("Someone else should drive........");
 // }
 
+/*
 const isTried = true;
 console.log(hasDriverLicense && hasGoodVision && !isTried);
 
@@ -339,3 +340,4 @@ if (age >= 18) {
 console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? "Wine🍷" : "Water💧"}`);
+*/
