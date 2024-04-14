@@ -16,6 +16,7 @@ if (hasDriverLicense) console.log("I can drive :D");
 // const if = 23;
 */
 
+/*
 function logger() {
   console.log("My name is bhavya");
 }
@@ -78,3 +79,96 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(2001, "Bhavya"));
 console.log(yearsUntilRetirement(1999, "Sarah"));
+*/
+
+/*
+// Functions Calling Other Functions
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  console.log(apples, oranges);
+  const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
+*/
+
+/*
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years`);
+    return retirement;
+  } else {
+    console.log(`${firstName} has already retired 🎉`);
+    return -1;
+  }
+  //   return `${firstName} retires in ${retirement} years`;
+};
+
+console.log(yearsUntilRetirement(1991, "ABC"));
+console.log(yearsUntilRetirement(1970, "Mike"));
+*/
+
+// Arrays
+const friend1 = "Micheal";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friends = ["Micheal", "Steven", "peter"];
+console.log(friends);
+
+const years = new Array(1991, 1992, 1993, 1994, 2024);
+console.log(years);
+
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+
+// friends = ["Bob", "Alice"];
+
+const firstName = "Bhavya";
+const bhavya = [
+  firstName,
+  "Rohilla",
+  2024 - 2001,
+  "Teacher",
+  "Student",
+  friends,
+];
+console.log(bhavya);
+console.log(bhavya.length);
+
+// Exercise
+const calcAge = function (birthYear) {
+  return 2024 - birthYear;
+};
+
+const year = [1990, 2001, 2002, 2003];
+const age1 = calcAge(year[0]);
+const age2 = calcAge(year[1]);
+const age3 = calcAge(year[year.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge(year[0]),
+  calcAge(year[1]),
+  calcAge([year[year.length - 1]]),
+];
+
+console.log(ages);
