@@ -121,6 +121,7 @@ console.log(yearsUntilRetirement(1991, "ABC"));
 console.log(yearsUntilRetirement(1970, "Mike"));
 */
 
+/*
 // Arrays
 const friend1 = "Micheal";
 const friend2 = "Steven";
@@ -172,3 +173,85 @@ const ages = [
 ];
 
 console.log(ages);
+*/
+
+const frineds = ["Micheal", "Steven", "Peter"];
+console.log(frineds);
+
+// Add element
+const newLength = frineds.push("Jay");
+
+console.log(frineds);
+console.log(newLength);
+
+frineds.unshift("John");
+console.log(frineds);
+
+//Remove element
+const popped = frineds.pop(); //Last
+console.log(popped);
+console.log(frineds);
+
+frineds.shift(); //First
+console.log(frineds);
+
+console.log(frineds.indexOf("Steven"));
+
+if (frineds.includes("Steven")) {
+  console.log("You have a friend called Steven");
+}
+
+const bhavyaArray = [
+  "Bhavya",
+  "Rohilla",
+  2024 - 2001,
+  "Teacher",
+  ["Micheal", "Steven", "Peter"],
+];
+
+// objects
+
+const bhavya = {
+  firstName: "Bhavya",
+  lastName: "Rohilla",
+  age: 2024 - 2001,
+  job: "Teacher",
+  frineds: ["Micheal", "Steven", "Peter"],
+};
+
+console.log(bhavya);
+//Dot notation
+console.log(bhavya.lastName);
+//Bracket Notation
+console.log(bhavya["age"]);
+
+const nameKey = "Name";
+console.log(bhavya["first" + nameKey]);
+console.log(bhavya["last" + nameKey]);
+
+// console.log(bhavya.'last' + nameKey);
+
+const interestedIn = prompt(
+  "What do you want to know about bhavya? Choose between firstName, lastName, age, job, and friends"
+);
+
+// console.log(bhavya[interestedIn]);
+
+if (bhavya[interestedIn]) {
+  console.log(bhavya[interestedIn]);
+} else {
+  console.log(
+    "Wrong Request!! Choose between firstName, lastName, age, job, and friends"
+  );
+}
+
+bhavya.location = "Sirsa";
+bhavya["x"] = "@bhavyarohilla1";
+console.log(bhavya);
+
+// Challenge
+// "bhavya has 3 friends, and his best friend is called micheal"
+
+console.log(
+  `${bhavya.firstName} has ${bhavya.frineds.length} friends, and his best friend is called ${bhavya.frineds[0]}.`
+);
