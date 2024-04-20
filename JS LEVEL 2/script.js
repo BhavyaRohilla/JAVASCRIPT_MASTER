@@ -175,6 +175,7 @@ const ages = [
 console.log(ages);
 */
 
+/*
 const frineds = ["Micheal", "Steven", "Peter"];
 console.log(frineds);
 
@@ -255,3 +256,43 @@ console.log(bhavya);
 console.log(
   `${bhavya.firstName} has ${bhavya.frineds.length} friends, and his best friend is called ${bhavya.frineds[0]}.`
 );
+*/
+
+const bhavya = {
+  firstName: "Bhavya",
+  lastName: "Rohilla",
+  birthYear: 2001,
+  job: "Teacher",
+  frineds: ["Micheal", "Steven", "Peter"],
+  hasDriverLicense: true,
+  // calcAge: function (birthYear) {
+  //   return 2024 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   console.log(this)
+  //   return 2024 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2024 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-years old ${
+      bhavya.job
+    }, and he has ${this.hasDriverLicense ? "a" : "no"} driver license.`;
+  },
+};
+
+console.log(bhavya.calcAge());
+// console.log(bhavya["calcAge"](2001));
+
+console.log(bhavya.age);
+console.log(bhavya.age);
+console.log(bhavya.age);
+console.log(bhavya.getSummary());
+
+// Challenge
+//"Muskan is a 'age'-year student, and she has 'a' - 'not' drive's license"
