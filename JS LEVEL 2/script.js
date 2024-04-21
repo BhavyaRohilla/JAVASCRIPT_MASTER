@@ -258,6 +258,7 @@ console.log(
 );
 */
 
+/*
 const bhavya = {
   firstName: "Bhavya",
   lastName: "Rohilla",
@@ -296,3 +297,73 @@ console.log(bhavya.getSummary());
 
 // Challenge
 //"Muskan is a 'age'-year student, and she has 'a' - 'not' drive's license"
+*/
+
+/*
+// console.log("Lifting weights repetition 1 🏋️");
+// console.log("Lifting weights repetition 2 🏋️");
+// console.log("Lifting weights repetition 3 🏋️");
+// console.log("Lifting weights repetition 4 🏋️");
+// console.log("Lifting weights repetition 5 🏋️");
+// console.log("Lifting weights repetition 6 🏋️");
+// console.log("Lifting weights repetition 7 🏋️");
+// console.log("Lifting weights repetition 8 🏋️");
+// console.log("Lifting weights repetition 9 🏋️");
+// console.log("Lifting weights repetition 10 🏋️");
+
+// for loop keep running while condition is TRUE
+
+for (let rep = 1; rep <= 30; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🏋️`);
+}
+*/
+
+const bhavya = [
+  "Bhavya",
+  "Rohilla",
+  2024 - 2001,
+  "Teacher",
+  ["Micheal", "Steven", "Peter"],
+  true,
+];
+
+// console.log(bhavya[0]);
+// console.log(bhavya[1]);
+// ...
+// console.log(bhavya[4]);
+const types = [];
+
+for (let i = 0; i < bhavya.length; i++) {
+  // Reading from bhavya array
+  console.log(bhavya[i], typeof bhavya[i]);
+
+  // Filling types array
+  // types[i] = typeof bhavya[i];
+  types.push(typeof bhavya[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2024 - years[i]);
+}
+
+console.log(ages);
+
+//Continue and break
+console.log("--- ONLY STRINGS ---");
+for (let i = 0; i < bhavya.length; i++) {
+  if (typeof bhavya[i] !== "string") continue;
+
+  console.log(bhavya[i], typeof bhavya[i]);
+}
+
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < bhavya.length; i++) {
+  if (typeof bhavya[i] === "number") break;
+
+  console.log(bhavya[i], typeof bhavya[i]);
+}
