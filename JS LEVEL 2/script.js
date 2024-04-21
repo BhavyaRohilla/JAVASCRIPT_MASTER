@@ -317,7 +317,7 @@ for (let rep = 1; rep <= 30; rep++) {
   console.log(`Lifting weights repetition ${rep} 🏋️`);
 }
 */
-
+/*
 const bhavya = [
   "Bhavya",
   "Rohilla",
@@ -366,4 +366,45 @@ for (let i = 0; i < bhavya.length; i++) {
   if (typeof bhavya[i] === "number") break;
 
   console.log(bhavya[i], typeof bhavya[i]);
+}
+*/
+/*
+const bhavya = [
+  "Bhavya",
+  "Rohilla",
+  2024 - 2001,
+  "Teacher",
+  ["Micheal", "Steven", "Peter"],
+  true,
+];
+
+// 0, 1, ...., 4
+// 4, 3, ...., 0
+
+for (let i = bhavya.length - 1; i >= 0; i--) {
+  console.log(i, bhavya[i]);
+}
+*/
+/*
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`-------- Starting exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repition ${rep}🏋️`);
+  }
+}
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`WHILE: Lifting weights repetition ${rep} 🏋️`);
+  rep++;
+}
+*/
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is about to end.......");
 }
